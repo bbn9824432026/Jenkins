@@ -1,3 +1,4 @@
+Here are the complete **Jenkins installation steps from Chapter 3 (sections 3.1 to 3.16)** with **all Linux-related commands** from the _Jenkins: The Definitive Guide_:
 
 ---
 
@@ -8,51 +9,14 @@
 
 ## 📥 3.2 Downloading and Installing Jenkins
 
+### Check Java version:
+```bash
+java -version
+```
 
----
-
-- **Jenkins Distribution**:  
-  Distributed as a `.war` (Web Application Archive) file.
-
-- **Java Requirement**:  
-  Requires **Java 5 or newer** (JDK recommended for builds).  
-  Check version with:
-  ```bash
-  java -version
-  ```
-
-- **Download Location**:  
-  Latest `.war` file available from [https://jenkins.io](https://jenkins.io).
-
-- **Installation Options**:
-  - **Stand-alone WAR file** (simplest, fastest way)
-  - **Java application server** (e.g., Tomcat, JBoss)
-  - **Native packages** (available for Linux, macOS, Windows)
-
-- **Start Jenkins (stand-alone)**:
-  ```bash
-  java -jar jenkins.war
-  ```
-
-- **Default ports**:
-  - HTTP: `8080`
-  - AJP13: `8009`
-
-- **Access Jenkins**:
-  - Visit: `http://localhost:8080`
-
-- **Directory Suggestion**:
-  - Linux: `/usr/local/jenkins` or `/opt/jenkins`
-  - Avoid paths with spaces (especially on Windows).
-
-- **Windows Users**:
-  - Use `.msi` installer from Jenkins ZIP
-  - Comes with bundled JRE
-  - Installs Jenkins as a Windows service automatically
-
----
-
-Let me know if you’d like a step-by-step shell script or diagram for this setup!jar jenkins.war
+### Run Jenkins from WAR file:
+```bash
+java -jar jenkins.war
 ```
 
 ---
@@ -206,3 +170,5 @@ java -jar jenkins.war
 > With Jenkins installed, you're ready to move on to configuration and job creation.
 
 ---
+
+Let me know if you'd like this exported as PDF/Markdown or styled as a team onboarding doc.
